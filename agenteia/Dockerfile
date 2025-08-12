@@ -1,0 +1,12 @@
+FROM n8nio/n8n:latest
+
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=admin
+ENV N8N_BASIC_AUTH_PASSWORD=miclave123
+
+ENV WEBHOOK_URL=https://tu-app-en-render.onrender.com/
+ENV N8N_ENCRYPTION_KEY=8d9f7a3b8e6c5d4f1234567890abcdef1234567890abcdef1234567890abcdef
+
+EXPOSE 5678
+
+CMD ["n8n", "start"]
